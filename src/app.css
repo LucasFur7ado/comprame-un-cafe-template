@@ -1,0 +1,70 @@
+@tailwind base;
+@tailwind utilities;
+@tailwind components;
+
+@layer components {
+    h1 {
+        @apply text-3xl md:text-4xl font-[main]
+    }
+
+    .input, input {
+        @apply border-[1px] border-[var(--white-1)] px-4 py-2 bg-[var(--white-transparent-1)] rounded-lg w-full
+    }
+
+    section {
+        @apply py-4 px-4 md:py-16 md:px-40
+    }
+}
+
+@font-face {
+    font-family: 'main';
+    src: url('/coolvetic.otf');
+}
+
+:root {
+    --white-1: #fff3;
+    --svgs-color: #fff;
+    --background: #272a3a;
+    --accent: rgb(0, 255, 255);
+    --accent-transparent: rgba(0, 255, 255, 0.068);
+    --white-transparent: rgba(255, 255, 255, 0.068);
+    --white-transparent-1: rgba(255, 255, 255, 0.018);
+}
+
+body {
+    background-color: var(--background);
+    color: white;
+}
+
+body::-webkit-scrollbar {
+    -webkit-appearance: none;
+}
+
+body::-webkit-scrollbar:vertical {
+    width: 3px;
+}
+
+body::-webkit-scrollbar-button:increment,
+.contenedor::-webkit-scrollbar-button {
+    display: none;
+}
+
+body::-webkit-scrollbar:horizontal {
+    height: 0px;
+}
+
+body::-webkit-scrollbar-thumb {
+    background-color: var(--accent);
+    border-radius: 2px;
+    border: none;
+}
+
+body::-webkit-scrollbar-track {
+    border-radius: 1px;
+    background-color: var(--background);
+}
+
+svg:hover {
+    stroke: var(--accent);
+    cursor: pointer;
+}
