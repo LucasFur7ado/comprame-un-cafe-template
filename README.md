@@ -19,7 +19,7 @@ BOT_TOKEN='API token del bot de Telegram'
 ACCESS_TOKEN='Access token de tu aplicación en Mercado Pago'
 ~~~
 
-Para obtener el ACCESS_TOKEN debes acceder a [mercado pago developers]('https://www.mercadopago.com.uy/developers/es') (adecúa la URL a tu país) y crear una aplicación. En el apartado de credenciales de producción se mostrará esta información.
+Para obtener el ACCESS_TOKEN debes acceder a mercado pago [developers]('https://www.mercadopago.com.uy/developers/es') (adecúa la URL a tu país) y crear una aplicación. En el apartado de credenciales de producción se mostrará esta información.
 
 ## config.js
 
