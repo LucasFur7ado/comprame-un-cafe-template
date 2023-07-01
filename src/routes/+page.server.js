@@ -53,7 +53,11 @@ export const actions = {
             .then(async res => {
                 loading.set(false)
                 const data = await res.json()
-                result.data = data
+                result.data = {
+                    init_point: data.init_point,
+                    success: data.success,
+                    error: data.error
+                }
                 if (data.status == 400)
                     throw new Error('error')
             })
